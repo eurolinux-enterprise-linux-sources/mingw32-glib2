@@ -7,7 +7,7 @@
 
 Name:           mingw32-glib2
 Version:        2.22.0
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        MinGW Windows GLib2 library
 
 License:        LGPLv2+
@@ -179,6 +179,10 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Mon Aug 22 2011 Kai Tietz <ktietz@redhat.com>
+- Adjusted version and rebuild using gcc 4.4.6
+  Related: rhbz#722878
+
 * Fri Feb  4 2011 Andrew Beekhof <abeekhof@redhat.com> - 2.22.0-2
 - Import 2.20.0 from Fedora so native packages dont trail mingw ones
   Related: rhbz#658833
